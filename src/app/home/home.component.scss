@@ -8,16 +8,25 @@
     background: transparent;
 }
 
-.title-container{
-    padding: 18%;
-    margin: 0 auto;
-    max-width: 50%;
-    height: 40%;
-    .title{
-        text-align: center;
-        font-size: 70px;
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .title {
+    font-size: 70px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .title-container {
+      padding: 10% 0;
     }
-}
+  }
+  
 
 .cursor {
     animation: blink-animation 1s infinite;
