@@ -1,0 +1,28 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$light-theme: mat.define-light-theme((
+  color: (
+    primary: mat.define-palette(mat.$yellow-palette, 200),
+    accent: mat.define-palette(mat.$blue-grey-palette, A200, A100, A400),
+    warn: mat.define-palette(mat.$red-palette),
+  ),
+  typography: mat.define-typography-config(
+    $font-family: 'Ubuntu'
+  ),
+  density: 0,
+));
+
+$dark-theme: mat.define-dark-theme((
+ color: (
+   primary: mat.define-palette(mat.$grey-palette),
+   accent: mat.define-palette(mat.$teal-palette),
+ ),
+  typography: mat.define-typography-config(
+    $font-family: 'Ubuntu'
+  ),
+  density: 0,
+));
+
+@include mat.all-component-themes($light-theme);

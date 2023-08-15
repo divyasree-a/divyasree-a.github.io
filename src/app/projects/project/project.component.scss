@@ -1,0 +1,27 @@
+@use '@angular/material' as mat;
+
+.project{
+    padding: 2%;
+    border: 2px solid black;
+    margin: 5% auto;
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.project:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: mat.get-color-from-palette(mat.$yellow-palette, 200);
+}
+
+.info{
+    padding: 1%;
+    margin: 1%;
+    width: 50%;
+    text-align: center;
+}
+
+.project-title{
+    font-weight: bold;
+    padding-bottom: 1%;
+}

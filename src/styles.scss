@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@import './app-theme.scss';
+@import './scrollbar.scss';
+
+html, body { 
+  height: 100%; 
+  background-color: mat.get-color-from-palette(mat.$yellow-palette, 200);
+}
+body { 
+  margin: 0; 
+  font-family: Ubuntu, sans-serif; 
+}
+
+.section{
+    padding: 2%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    .title{
+        text-align: center;
+        font-size: 40px;
+        line-height: 1.2;
+        padding-bottom: 2%;
+    }
+    .content{
+        text-align: center;
+        font-size: 25px;
+        line-height: 1.2;
+        padding-top: 1%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 1%;
+    }
+}
+
+.bgImage{
+  background-image: url('assets/images/download.jpg');
+  background-size: cover;
+}
+
+// links customization
+// link, visited, hover, active
+a:link{
+  color: mat.get-color-from-palette(mat.$yellow-palette, 800);
+  text-decoration: none;
+}
+a:visited{
+  color: mat.get-color-from-palette(mat.$grey-palette, 500);
+}
+a:hover{
+  color: mat.get-color-from-palette(mat.$grey-palette, 700);
+}
+a:active{
+  color: mat.get-color-from-palette(mat.$grey-palette, 700);
+}
+
